@@ -30,7 +30,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 * HTML5 ready. Use the new elements with confidence.
 * Designed with progressive enhancement in mind.
 * Includes Front End Stuff :
-  * [jquery](https://jquery.com/)
+  * [Jquery](https://jquery.com/)
   * [Bootstrap](http://getbootstrap.com/)
   * [Materialize](http://materializecss.com/)
   * [Simantic-UI](https://semantic-ui.com/)
@@ -41,7 +41,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
   * [Magnific-popup](http://dimsemenov.com/plugins/magnific-popup/)
   * [Nicescroll](http://areaaperta.com/nicescroll/)
   * [Sticky](http://stickyjs.com/)
-  * [sweetalert](http://t4t5.github.io/sweetalert/)
+  * [Sweetalert](http://t4t5.github.io/sweetalert/)
  * Include`Gulp.js`
  * Sass Media Queries
  * Flat Colors
