@@ -28,10 +28,18 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 
 ## Features 
 * HTML5 ready. Use the new elements with confidence.
-* Includes Framework :
- * [Bootstrap](http://getbootstrap.com/)
- * [Materialize](http://materializecss.com/)
- * [Simantic-UI](https://semantic-ui.com/)
-* Includes Icons :
- * [Font Awesome](http://fontawesome.io/icons/)
- * [Ionicon](http://ionicons.com/)
+* Designed with progressive enhancement in mind.
+* Includes Front End Stuff :
+  * [jquery](https://jquery.com/)
+  * [Bootstrap](http://getbootstrap.com/)
+  * [Materialize](http://materializecss.com/)
+  * [Simantic-UI](https://semantic-ui.com/)
+  * [Font Awesome](http://fontawesome.io/icons/)
+  * [Ionicon](http://ionicons.com/)
+  * [Datedropper](http://felicegattuso.com/projects/datedropper/)
+  * [Select2](https://select2.github.io/)
+  * [Magnific-popup](http://dimsemenov.com/plugins/magnific-popup/)
+  * [Nicescroll](http://areaaperta.com/nicescroll/)
+  * [Sticky](http://stickyjs.com/)
+  * [sweetalert](http://t4t5.github.io/sweetalert/)
+ * Sass Media Queries
