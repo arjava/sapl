@@ -7,17 +7,17 @@ $large:     1200px;
 
 // media queries
 
-@mixin mq($canvas) {
-  @if $canvas == extrasmall {
+@mixin mq($screenSize) {
+  @if $screenSize == extrasmall {
    @media only screen and (min-width: $xsmall) { @content; }
   }
-  @if $canvas == small {
+  @if $screenSize == small {
    @media only screen and (min-width: $small) { @content; }
   }
-  @else if $canvas == medium {
+  @else if $screenSize == medium {
    @media only screen and (min-width: $medium) { @content; }
   }
-  @else if $canvas == large {
+  @else if $screenSize == large {
    @media only screen and (min-width: $large) { @content; }
   }
 }
