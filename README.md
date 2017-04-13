@@ -29,4 +29,4 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 ## Features 
 - HTML5 ready. Use the new elements with confidence.
 - Includes Framework :
-..* Bootstrap
+* Bootstrap
