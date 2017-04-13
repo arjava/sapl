@@ -19,10 +19,10 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 ## Instructions
 
 1. Make sure you have these installed
-- [node.js](http://nodejs.org/)
-- [gulp](http://gulpjs.com/)
-- [ruby](https://www.ruby-lang.org/)
-- [Sass](http://sass-lang.com/)
+   * [node.js](http://nodejs.org/)
+   * [gulp](http://gulpjs.com/)
+   * [ruby](https://www.ruby-lang.org/)
+   * [Sass](http://sass-lang.com/)
 
 2. Just Clone and Use it :)
 
