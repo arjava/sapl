@@ -42,4 +42,6 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
   * [Nicescroll](http://areaaperta.com/nicescroll/)
   * [Sticky](http://stickyjs.com/)
   * [sweetalert](http://t4t5.github.io/sweetalert/)
+ * Include`Gulp.js`
  * Sass Media Queries
+ * Flat Colors
