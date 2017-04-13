@@ -29,4 +29,9 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 ## Features 
 * HTML5 ready. Use the new elements with confidence.
 * Includes Framework :
-  * Bootstrap
+ * [Bootstrap](http://getbootstrap.com/)
+ * [Materialize](http://materializecss.com/)
+ * [Simantic-UI](https://semantic-ui.com/)
+* Includes Icons :
+ * [Font Awesome](http://fontawesome.io/icons/)
+ * [Ionicon](http://ionicons.com/)
