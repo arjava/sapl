@@ -25,3 +25,8 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 - [Sass](http://sass-lang.com/)
 
 2. Just Clone and Use it :)
+
+## Features 
+- HTML5 ready. Use the new elements with confidence.
+- Includes Framework :
+..* Bootstrap
