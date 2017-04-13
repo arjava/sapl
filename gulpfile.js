@@ -51,7 +51,7 @@ gulp.task("watch", function() {
 	});
 	gulp.watch(["*.html"], ["html"]);
 	gulp.watch("src/sass/**/*.scss", ["sass"]);
-	gulp.watch("src/js/scripts.js", ["uglify"]);
+	gulp.watch("src/js/main.js", ["uglify"]);
 });
 
 gulp.task("default", ["watch"]);
