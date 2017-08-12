@@ -25,23 +25,3 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
    * [Sass](http://sass-lang.com/)
 
 2. Just Clone and Use it :)
-
-## Features 
-* HTML5 ready. Use the new elements with confidence.
-* Designed with progressive enhancement in mind.
-* Includes Front End Stuff :
-  * [Jquery](https://jquery.com/)
-  * [Bootstrap](http://getbootstrap.com/)
-  * [Materialize](http://materializecss.com/)
-  * [Simantic-UI](https://semantic-ui.com/)
-  * [Font Awesome](http://fontawesome.io/icons/)
-  * [Ionicon](http://ionicons.com/)
-  * [Datedropper](http://felicegattuso.com/projects/datedropper/)
-  * [Select2](https://select2.github.io/)
-  * [Magnific-popup](http://dimsemenov.com/plugins/magnific-popup/)
-  * [Nicescroll](http://areaaperta.com/nicescroll/)
-  * [Sticky](http://stickyjs.com/)
-  * [Sweetalert](http://t4t5.github.io/sweetalert/)
- * Include`Gulp.js`
- * Sass Media Queries
- * Flat Colors

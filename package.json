@@ -1,9 +1,9 @@
 {
-  "name": "Sass and Gulp Boilerplate",
-  "description": "Boilerplate",
+  "name": "Sass With Gulp Simple Starter",
+  "description": "Simple Starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Logustra/sass-boilerplate.git"
+    "url": "https://github.com/Logustra/sassWithGulpSimpleStarter.git"
   },
   "author": "Faizal Andyka",
   "license": "ISC",
