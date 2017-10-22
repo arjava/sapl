@@ -80,3 +80,35 @@
   background-size: $size;
   clip-path: polygon(0 0, 100% 0, 100% $clipPath, 0 100%);
 }
+
+// Background Shapes Image Parallax
+
+@mixin bgShapeLeftImgParallax ($image, $position, $repeat, $size, $attachment, $clipPath) {
+  background: url($image) $position $repeat;
+  background-size: $size;
+  background-attachment: $attachment;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 $clipPath);
+}
+
+@mixin bgShapeRightImgParallax ($image, $position, $repeat, $size, $attachment, $clipPath) {
+  background: url($image) $position $repeat;
+  background-size: $size;
+  background-attachment: $attachment;
+  clip-path: polygon(0 0, 100% 0, 100% $clipPath, 0 100%);
+}
+
+// Background Tinted Shapes Image Parallax
+
+@mixin bgTintedShapeLeftImgParallax ($image, $position, $repeat, $size, $attachment, $clipPath, $rgba) {
+  background: linear-gradient( $rgba, $rgba), url($image) $position $repeat;
+  background-size: $size;
+  background-attachment: $attachment;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 $clipPath);
+}
+
+@mixin bgTintedShapeRightImgParallax ($image, $position, $repeat, $size, $attachment, $clipPath, $rgba) {
+  background: linear-gradient( $rgba, $rgba), url($image) $position $repeat;
+  background-size: $size;
+  background-attachment: $attachment;
+  clip-path: polygon(0 0, 100% 0, 100% $clipPath, 0 100%);
+}

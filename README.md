@@ -37,6 +37,8 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     * Background Tinted Image Parallax
     * Background Shapes Image 
     * Background Tinted Shapes Image 
+    * Background Shapes Image Parallax 
+    * Background Tinted Shapes Image Parallax 
 
 ## How to use Mixins
 1. Breakpoints
@@ -110,6 +112,30 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 
     .example {
         @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%, rgba(255, 0, 0, 0.45));
+    }
+    ```
+10. Background Shapes Image Parallax 
+    ```
+    .example {
+
+        @include bgShapeLeftImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, 87%);
+    }
+
+    .example {
+
+        @include bgShapeRightImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, 87%);
+    }
+    ```
+11. Background Tinted Shapes Image Parallax 
+    ```
+    .example {
+
+        @include bgTintedShapeLeftImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, 87%, rgba(255, 0, 0, 0.45));
+    }
+
+    .example {
+
+        @include bgTintedShapeRightImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, 87%, rgba(255, 0, 0, 0.45));
     }
     ```
 
