@@ -43,6 +43,15 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     @include mq (xxsmall) {
         // your css
     }
+
+    or 
+
+    .example {
+
+        @include mq (xxsmall) {
+            // your css
+        }
+    }
     ```
    
 2. Clearfix
