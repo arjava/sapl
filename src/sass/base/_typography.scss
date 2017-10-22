@@ -1,7 +1,29 @@
-$fontPrimary : "font", sans-serif;
-$fontSecondary : "font", sans-serif;
-$fontThird : "font", sans-serif;
+/*
+Find your favorite fonts at here :
+https://fonts.google.com
 
-$b: 700; // bold
-$l: 300; // light
-$i: italic;
+You can generate your css @font-face at here:
+https://transfonter.org/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather:400,700');
+
+$font1: "font", sans-serif;
+$font2: "font", sans-serif;
+$font3: "font", sans-serif;
+
+.text-normal {
+    text-transform: none;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

@@ -16,12 +16,93 @@ There are many project architectures that you can employ in your project, and ea
 
 Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
-## Instructions
+## Features
+1. Semantic HTML5
+2. Includes Flat Colors
+3. Includes Typography
+4. Autoprefixer   
+5. Livereload with Browsersync  
+6. Includes Framework
+    * [Jquery](https://jquery.com/)
+    * [Jquery UI](http://jqueryui.com/)
+    * [Bootstrap](http://getbootstrap.com/)
+    * [Font Awesome](http://fontawesome.io/)
+7. Includes Useful Mixins
+    * Breakpoints
+    * Clearfix
+    * Rem units
+    * Background Image
+    * Background Image Parallax
+    * Background Tinted Image 
+    * Background Shapes Image 
+    * Background Tinted Shapes Image 
 
+## How to use Mixins
+1. Breakpoints
+    ```
+    @include mq (xxsmall) {
+        // your css
+    }
+    ```
+   
+2. Clearfix
+    ```
+    .example {
+        @include clearfix;
+    }
+    ```
+3. Rem units
+    ```
+    .example {
+        @include font-size(14px);
+    }
+    ```
+4. Background Image
+    ```
+    .example {
+        @include bgImg ('../images/image.jpeg', center center, no-repeat, cover);
+    }
+    ```
+5. Background Image Parallax
+    ```
+    .example {
+        @include bgImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed);
+    }
+    ```
+6. Background Tinted Image 
+    ```
+    .example {
+        @include bgTintedImg ('../images/image.jpeg', center center, no-repeat, cover, rgba(255, 0, 0, 0.45));
+    }
+    ```
+7. Background Shapes Image
+    ```
+    .example {
+        @include bgShapeLeftImg ('../images/image.jpeg', center center, no-repeat, cover, 87%);
+    }
+
+    .example {
+        @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%, rgba(255, 0, 0, 0.45));
+    }
+    ```
+    
+8. Background Tinted Shapes Image 
+    ```
+    .example {
+        @include bgShapeLeftImg ('../images/image.jpeg', center center, no-repeat, cover, 87%, rgba(255, 0, 0, 0.45));
+    }
+
+    .example {
+        @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%);
+    }
+    ```
+
+
+## Instructions
 1. Make sure you have these installed
-   * [node.js](http://nodejs.org/)
-   * [gulp](http://gulpjs.com/)
-   * [ruby](https://www.ruby-lang.org/)
-   * [Sass](http://sass-lang.com/)
+    * [node.js](http://nodejs.org/)
+    * [gulp](http://gulpjs.com/)
+    * [ruby](https://www.ruby-lang.org/)
+    * [Sass](http://sass-lang.com/)
 
 2. Just Clone and Use it :)

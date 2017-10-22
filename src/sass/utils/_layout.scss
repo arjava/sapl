@@ -1,17 +1,21 @@
 // breakpoints
 
-$xsmall:    375px;
-$small:     480px;
-$medium:    768px;
+$xxsmall:   320px;
+$xsmall:    480px;
+$small:     768px;
+$medium:    992px;
 $large:     1200px;
 
 // media queries
 
 @mixin mq($screenSize) {
-  @if $screenSize == extrasmall {
+  @if $screenSize == xxsmall {
+   @media only screen and (min-width: $xxsmall) { @content; }
+  }
+  @else if $screenSize == xsmall {
    @media only screen and (min-width: $xsmall) { @content; }
   }
-  @if $screenSize == small {
+  @else if $screenSize == small {
    @media only screen and (min-width: $small) { @content; }
   }
   @else if $screenSize == medium {
