@@ -18,7 +18,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 
 ## Features
 1. Semantic HTML5
-2. Includes Flat Colors
+2. Includes Flat Color
 3. Includes Typography
 4. Autoprefixer   
 5. Livereload with Browsersync  
@@ -32,8 +32,9 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     * Clearfix
     * Rem units
     * Background Image
-    * Background Image Parallax
     * Background Tinted Image 
+    * Background Image Parallax
+    * Background Tinted Image Parallax
     * Background Shapes Image 
     * Background Tinted Shapes Image 
 
@@ -72,19 +73,25 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
         @include bgImg ('../images/image.jpeg', center center, no-repeat, cover);
     }
     ```
-5. Background Image Parallax
-    ```
-    .example {
-        @include bgImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed);
-    }
-    ```
-6. Background Tinted Image 
+5. Background Tinted Image 
     ```
     .example {
         @include bgTintedImg ('../images/image.jpeg', center center, no-repeat, cover, rgba(255, 0, 0, 0.45));
     }
     ```
-7. Background Shapes Image
+6. Background Image Parallax
+    ```
+    .example {
+        @include bgImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed);
+    }
+    ```
+7. Background Tinted Image Parallax
+    ```
+    .example {
+        @include bgTintedImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, rgba(255, 0, 0, 0.45));
+    }
+    ```
+8. Background Shapes Image
     ```
     .example {
         @include bgShapeLeftImg ('../images/image.jpeg', center center, no-repeat, cover, 87%);
@@ -95,7 +102,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     }
     ```
     
-8. Background Tinted Shapes Image 
+9. Background Tinted Shapes Image 
     ```
     .example {
         @include bgShapeLeftImg ('../images/image.jpeg', center center, no-repeat, cover, 87%, rgba(255, 0, 0, 0.45));

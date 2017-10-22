@@ -30,6 +30,13 @@
   background-size: $size;
 }
 
+// Background Tinted Image
+
+@mixin bgTintedImg ($image, $position, $repeat, $size, $rgba) {
+  background: linear-gradient( $rgba, $rgba), url($image) $position $repeat;
+  background-size: $size;
+}
+
 // Background Image Parallax
 
 @mixin bgImgParallax ($image, $position, $repeat, $size, $attachment) {
@@ -38,11 +45,12 @@
   background-attachment: $attachment;
 }
 
-// Background Tinted Image
+// Background Tinted Image Parallax
 
-@mixin bgTintedImg ($image, $position, $repeat, $size, $rgba) {
+@mixin bgTintedImgParallax ($image, $position, $repeat, $size, $attachment, $rgba) {
   background: linear-gradient( $rgba, $rgba), url($image) $position $repeat;
   background-size: $size;
+  background-attachment: $attachment;
 }
 
 // Background Shapes Image
