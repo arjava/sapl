@@ -89,9 +89,9 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     .example {
         @include bgShapeLeftImg ('../images/image.jpeg', center center, no-repeat, cover, 87%);
     }
-
+    
     .example {
-        @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%, rgba(255, 0, 0, 0.45));
+        @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%);
     }
     ```
     
@@ -102,7 +102,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     }
 
     .example {
-        @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%);
+        @include bgShapeRightImg ('../images/image.jpeg', center center, no-repeat, cover, 87%, rgba(255, 0, 0, 0.45));
     }
     ```
 
