@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sass Boilerplate</title>
+  <title>Simple Jquery Project</title>
   <link rel="shortcut icon" href="assets/public/images/logo.png" type="image/png">
 
   <!-- Jquery UI  -->
@@ -28,46 +28,110 @@
     <![endif]-->
 </head>
 
-<body>
-
-  <header>
-    <nav>
-
-    </nav>
-  </header>
+<body class="frontpage">
 
   <main>
-    <section>
-      <div class="containee">
-        <h1 class="text-center">Bismillah</h1>
-      </div>
-      <!-- .container -->
-    </section>
+    <div class="start" data-panel="0">
+      <h1>Simple Jquery Projects</h1>
+      <button class="btn btn-success text-uppercase">see projects</button>
+    </div>
+    <!-- .start -->
 
-    <section class="one" id="one">
-      <div class="container">
-        <h2>Title</h2>
-        <p>Ullamco excepteur deserunt Lorem ullamco minim laboris quis. Culpa consectetur officia aliqua dolor sit et labore
-          ipsum. Elit in irure do reprehenderit consequat in deserunt ex aute ut ex sint minim. Minim commodo enim tempor
-          amet ullamco. Duis magna culpa voluptate eiusmod in labore nostrud Lorem consequat cupidatat deserunt excepteur.</p>
+    <div class="list-projects" data-panel="1">
+      <div class="item col-sm-4" data-project="1">
+        <div class="wrapper">
+          <h1>Tabs Witged</h1>
+          <a href="">
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
       </div>
-      <!-- .container -->
-    </section>
+      <!-- .columns -->
 
-    <section class="two" id="two">
-      <div class="container">
-        <h2>Title</h2>
-        <p>Ullamco excepteur deserunt Lorem ullamco minim laboris quis. Culpa consectetur officia aliqua dolor sit et labore
-          ipsum. Elit in irure do reprehenderit consequat in deserunt ex aute ut ex sint minim. Minim commodo enim tempor
-          amet ullamco. Duis magna culpa voluptate eiusmod in labore nostrud Lorem consequat cupidatat deserunt excepteur.</p>
+      <div class="item col-sm-4" data-project="2">
+        <div class="wrapper">
+          <h1>Card Slider Witged</h1>
+          <a href="">
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
       </div>
-      <!-- .container -->
-    </section>
+      <!-- .columns -->
+
+      <div class="item col-sm-4" data-project="3">
+        <div class="wrapper">
+          <h1>Image Slider Witged</h1>
+          <a href="">
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
+      </div>
+      <!-- .columns -->
+
+      <div class="item col-sm-4" data-project="4">
+        <div class="wrapper">
+          <h1>Overlay Witged</h1>
+          <a href="">
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
+      </div>
+      <!-- .columns -->
+
+      <div class="item col-sm-4" data-project="5">
+        <div class="wrapper">
+          <h1>Simple Quiz App</h1>
+          <a href="">
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
+      </div>
+      <!-- .columns -->
+
+      <div class="item col-sm-4" data-project="6">
+        <div class="wrapper">
+          <h1>Simple Gallery App</h1>
+          <a href="">
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
+      </div>
+      <!-- .columns -->
+    </div>
+    <!-- .projects -->
+
+    <div class="tabs-witged" data-project-content="1">
+      <h1>Tabs Witged</h1>
+      
+      <ul class="list-unstyled list-inline tab-header">
+        <li><a class="active" data-tab="1">Menu 1</a></li>
+        <li><a data-tab="2">Menu 2</a></li>
+        <li><a data-tab="3">Menu 3</a></li>
+      </ul>
+
+      <div class="tab-contents">
+        <div class="item active" data-content="1">
+          <h3>Menu 1</h3>
+          <p>Do commodo consectetur ut cillum ullamco exercitation culpa reprehenderit officia anim.</p>
+        </div>
+        <!-- content 1 -->
+
+        <div class="item" data-content="2">
+          <h3>Menu 2</h3>
+          <p>Do commodo consectetur ut cillum ullamco exercitation culpa reprehenderit officia anim.</p>
+        </div>
+        <!-- content 2 -->
+
+        <div class="item" data-content="3">
+          <h3>Menu 3</h3>
+          <p>Do commodo consectetur ut cillum ullamco exercitation culpa reprehenderit officia anim.</p>
+        </div>
+        <!-- content 3 -->
+      </div>
+      <!-- .tab-contents -->
+    </div>
+    <!-- .tabs-witged -->
   </main>
-
-  <footer>
-
-  </footer>
 
   <!-- Jquery  -->
   <script src="public/js/jquery-3.2.1.min.js"></script>
