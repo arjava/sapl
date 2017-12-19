@@ -1,25 +1,17 @@
-var gulp = require("gulp"),
-		sass = require("gulp-sass"),
-		uglify = require("gulp-uglify"),
-		pump = require("pump"),
-		sourcemaps = require("gulp-sourcemaps"),
-		autoprefixer = require("gulp-autoprefixer"),
-		browserSync = require("browser-sync").create();
+var gulp 			= require("gulp"),
+	sass 			= require("gulp-sass"),
+	babel			= require("gulp-babel"),
+	uglify 			= require("gulp-uglify"),
+	autoprefixer 	= require("gulp-autoprefixer"),
+	browserSync 	= require("browser-sync").create();
 
-// minify javaSripts
-gulp.task("uglify", function (cb) {
-	pump([
-			gulp.src("src/js/*.js"),
-			uglify(),
-			gulp.dest("public/js")
-		],
-		cb
-	)
+// html
+gulp.task("html", function() {
+	return gulp.src("*.html")
 	.pipe(browserSync.reload({ stream : true })); // livereload
 });
 
 // compile sass
-// sourcemaps
 // automatic browser prefixing
 gulp.task("sass", function() {
 	return gulp.src("src/sass/**/*.scss")
@@ -34,9 +26,15 @@ gulp.task("sass", function() {
 	.pipe(browserSync.reload({ stream : true })); // livereload
 });
 
-// html
-gulp.task("html", function() {
-	return gulp.src("*.html")
+// babel
+// uglify
+gulp.task("babel", function () {
+	return gulp.src("src/js/*.js")
+	.pipe(babel({
+		presets: ["es2015", "stage-2"]
+	}))
+	.pipe(uglify())
+	.pipe(gulp.dest("public/js"))
 	.pipe(browserSync.reload({ stream : true })); // livereload
 });
 
@@ -50,7 +48,7 @@ gulp.task("watch", function() {
 	});
 	gulp.watch(["*.html"], ["html"]);
 	gulp.watch("src/sass/**/*.scss", ["sass"]);
-	gulp.watch("src/js/*.js", ["uglify"]);
+	gulp.watch("src/js/*.js", ["babel"]);
 });
 
 gulp.task("default", ["watch"]);

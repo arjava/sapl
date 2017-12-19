@@ -1,4 +1,21 @@
-# Architecture Sass
+# Sass Boilerplate
+Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+
+* Sass with Gulp : [Here](https://github.com/Logustra/sassWithGulpSimpleStarter)
+* Sass with Grunt : Coming Soon
+* Sass with Webpack : Coming Soon
+
+## Quick Start
+1. Make sure you have these installed
+    * [node.js](http://nodejs.org/)
+    * [gulp](http://gulpjs.com/)
+    * [Sass](http://sass-lang.com/)
+
+2. Clone this repository
+3. Run `npm install`
+4. Happy to use :)  
+
+## Architecture Sass
 Properly architecting your Sass project is a crucial starting point to having a maintainable, scalable, and well-organized project. Sass makes separating your project into logical “modules” simple with the `@import` directive, which acts differently than the native CSS `@import` directive in that it **includes** `.scss` **or** `.sass` **files before the final CSS output.**
 
 You can [read the documentation on the](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#import) `@import` [directive](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#import) to get a good idea of how you can use it to include partial files.
@@ -138,13 +155,3 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
         @include bgTintedShapeRightImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, 87%, rgba(255, 0, 0, 0.45));
     }
     ```
-
-
-## Instructions
-1. Make sure you have these installed
-    * [node.js](http://nodejs.org/)
-    * [gulp](http://gulpjs.com/)
-    * [ruby](https://www.ruby-lang.org/)
-    * [Sass](http://sass-lang.com/)
-
-2. Just Clone and Use it :)
