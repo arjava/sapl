@@ -1,7 +1,7 @@
 # Sass Boilerplate
 Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
-* Sass with Gulp : [Here](https://github.com/Logustra/sassWithGulpSimpleStarter)
+* Sass with Gulp : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-gulp)
 * Sass with Grunt : Coming Soon
 * Sass with Webpack : Coming Soon
 
