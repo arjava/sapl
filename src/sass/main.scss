@@ -9,7 +9,7 @@ Telegram    : @logustra
 
 // utils
 @import "utils/mixins";
-@import "utils/layout";
+@import "utils/grid";
 
 // base
 @import "base/colors";
@@ -18,5 +18,6 @@ Telegram    : @logustra
 
 // layout
 @import "layout/navbar";
+@import "layout/sidebar";
 @import "layout/footer";
 @import "layout/responsive";

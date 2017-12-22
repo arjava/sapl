@@ -1,6 +1,6 @@
 {
-  "name": "Sass Boilerplate",
-  "description": "Sass with Gulp",
+  "name": "sass-with-gulp",
+  "description": "Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites",
   "repository": {
     "type": "git",
     "url": "https://github.com/Logustra/sass-boilerplate.git"
