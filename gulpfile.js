@@ -8,7 +8,7 @@ var gulp = 			require("gulp"),
 // html
 gulp.task("html", function() {
 	return gulp.src("*.html")
-		.pipe(browserSync.reload({ stream : true })); // livereload
+		.pipe(browserSync.stream());
 });
 
 // compile sass
@@ -19,10 +19,10 @@ gulp.task("sass", function() {
 			outputStyle: "compressed"
 		}).on("error", sass.logError))
 		.pipe(autoprefixer({
-			browsers : ["last 20 versions"]
+			browsers : "last 20 versions"
 		}))
 		.pipe(gulp.dest("public/css"))
-		.pipe(browserSync.reload({ stream : true })); // livereload
+		.pipe(browserSync.stream());
 });
 
 // babel
@@ -34,7 +34,7 @@ gulp.task("babel", function () {
 		}))
 		.pipe(uglify())		
 		.pipe(gulp.dest("public/js"))
-		.pipe(browserSync.reload({ stream : true })); // livereload
+		.pipe(browserSync.stream());
 });
 
 // watch

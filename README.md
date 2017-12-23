@@ -2,7 +2,7 @@
 Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
 * Sass with Gulp : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-gulp)
-* Sass with Grunt : Coming Soon
+* Sass with Grunt : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-grunt)
 * Sass with Webpack : Coming Soon
 
 ## Quick Start
@@ -12,8 +12,10 @@ Sass Boilerplate is a professional front-end template for building fast, robust,
     * [Sass](http://sass-lang.com/)
 
 2. Clone repository `git clone -b sass-with-gulp https://github.com/Logustra/sass-boilerplate.git`
-3. Run `npm install`
-4. Happy to use :)  
+3. CD to the folder `cd sass-boilerplate` 
+4. Run `npm install`
+5. Run `grunt`  
+6. Happy to use :)   
 
 ## Architecture Sass
 Properly architecting your Sass project is a crucial starting point to having a maintainable, scalable, and well-organized project. Sass makes separating your project into logical “modules” simple with the `@import` directive, which acts differently than the native CSS `@import` directive in that it **includes** `.scss` **or** `.sass` **files before the final CSS output.**
