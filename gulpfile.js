@@ -1,9 +1,8 @@
-var gulp = 			require("gulp"),
-	sass = 			require("gulp-sass"),
-	uglify = 		require("gulp-uglify"),
-	babel = 		require("gulp-babel"),
-	autoprefixer = 	require("gulp-autoprefixer"),
-	browserSync = 	require("browser-sync").create();
+var gulp 			= require("gulp"),
+	sass 			= require("gulp-sass"),
+	babel 			= require("gulp-babel"),
+	autoprefixer 	= require("gulp-autoprefixer"),
+	browserSync 	= require("browser-sync").create();
 
 // html
 gulp.task("html", function() {
@@ -26,13 +25,11 @@ gulp.task("sass", function() {
 });
 
 // babel
-// uglify
 gulp.task("babel", function () {
 	return gulp.src("src/js/*.js")
 		.pipe(babel({
-			presets: ["es2015", "stage-2"]
+			presets: ["es2015", "stage-2", "minify"]
 		}))
-		.pipe(uglify())		
 		.pipe(gulp.dest("public/js"))
 		.pipe(browserSync.stream());
 });
