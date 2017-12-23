@@ -40,13 +40,15 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 2. Includes Flat Color
 3. Includes Typography
 4. Autoprefixer   
-5. Livereload with Browsersync  
-6. Includes Framework
+5. Livereload
+6. Automatic Compile Javascript 
+7. Automatic Minifying Javascript
+8. Includes Framework
     * [Jquery](https://jquery.com/)
     * [Jquery UI](http://jqueryui.com/)
     * [Bootstrap](http://getbootstrap.com/)
     * [Font Awesome](http://fontawesome.io/)
-7. Includes Useful Mixins
+9. Includes Useful Mixins
     * Breakpoints
     * Clearfix
     * Rem units
@@ -57,7 +59,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     * Background Shapes Image 
     * Background Tinted Shapes Image 
     * Background Shapes Image Parallax 
-    * Background Tinted Shapes Image Parallax 
+    * Background Tinted Shapes Image Parallax  
 
 ## How to use Mixins
 1. Breakpoints
