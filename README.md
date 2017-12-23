@@ -14,7 +14,7 @@ Sass Boilerplate is a professional front-end template for building fast, robust,
 2. Clone repository `git clone -b sass-with-gulp https://github.com/Logustra/sass-boilerplate.git`
 3. CD to the folder `cd sass-boilerplate` 
 4. Run `npm install`
-5. Run `grunt`  
+5. Run `gulp`  
 6. Happy to use :)   
 
 ## Architecture Sass
