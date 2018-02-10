@@ -1,19 +1,21 @@
-# Sass Boilerplate
+# Sapl - The Sass Boilerplate
 Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
-* Sass with Gulp : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-gulp)
-* Sass with Grunt : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-grunt)
+* Sass with Gulp : [Here](https://github.com/Logustra/sapl/tree/sass-with-gulp)
+* Sass with Grunt : [Here](https://github.com/Logustra/sapl/tree/sass-with-grunt)
 * Sass with Webpack : Coming Soon
 
 ## Quick Start
 1. Make sure you have these installed
     * [node.js](http://nodejs.org/)
+    * [yarn](https://yarnpkg.com/en/)
     * [grunt](https://gruntjs.com/)
-    * [Sass](http://sass-lang.com/)
+    * [sass](http://sass-lang.com/)
+    * [browserify](http://browserify.org/)
 
-2. Clone repository `git clone -b sass-with-grunt https://github.com/Logustra/sass-boilerplate.git`
-3. CD to the folder `cd sass-boilerplate` 
-4. Run `npm install`
+2. Clone repository `git clone -b sass-with-grunt https://github.com/Logustra/sapl.git`
+3. CD to the folder `cd sapl` 
+4. Run `yarn install`
 5. Run `grunt`  
 6. Happy to use :)  
 
@@ -35,18 +37,55 @@ There are many project architectures that you can employ in your project, and ea
 
 Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
+## Directory Architecture
+```
+sapl/
+├── dist/
+│   ├── css
+│   │   └── vendors
+│   │
+│   ├── fonts
+│   ├── images
+│   ├── js/
+│   │   └── vendors
+│   │ 
+│   └── videos
+│
+└── src/
+    ├── images
+    ├── js/
+    │   ├── base
+    │   ├── components
+    │   └── layout
+    │
+    └── sass/
+        ├── base
+        ├── components
+        ├── layout
+        ├── pages
+        ├── themes
+        ├── utils
+        └── vendors
+```
+
 ## Features
 1. Semantic HTML5
 2. Includes Flat Color
 3. Includes Typography
-4. Autoprefixer   
-5. Livereload with Browsersync  
-6. Includes Framework
+4. Includes Grid System
+5. Include Babel
+6. Include Browserify
+7. Automatic Browser Prefixing   
+8. Automatic Minifying CSS   
+9. Automatic Minifying Images
+10. Automatic Minifying Javascript
+11. Automatic Livereload 
+12. Includes Framework
     * [Jquery](https://jquery.com/)
     * [Jquery UI](http://jqueryui.com/)
     * [Bootstrap](http://getbootstrap.com/)
     * [Font Awesome](http://fontawesome.io/)
-7. Includes Useful Mixins
+13. Includes Useful Mixins
     * Breakpoints
     * Clearfix
     * Rem units
@@ -57,7 +96,7 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
     * Background Shapes Image 
     * Background Tinted Shapes Image 
     * Background Shapes Image Parallax 
-    * Background Tinted Shapes Image Parallax 
+    * Background Tinted Shapes Image Parallax
 
 ## How to use Mixins
 1. Breakpoints
@@ -157,3 +196,19 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
         @include bgTintedShapeRightImgParallax ('../images/image.jpeg', center center, no-repeat, cover, fixed, 87%, rgba(255, 0, 0, 0.45));
     }
     ```
+
+## Documentations
+1. [gulp](https://github.com/gulpjs/gulp)
+2. [gulp-sass](https://github.com/dlmanning/gulp-sass)
+3. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
+4. [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
+5. [gulp-browserify](https://github.com/deepak1556/gulp-browserify)
+6. [gulp-babelify](https://github.com/babel/babelify)
+7. [vinyl-buffer](https://github.com/hughsk/vinyl-buffer)
+8. [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
+9. [gulp-rename](https://github.com/hparra/gulp-rename)
+10. [gulp-image](https://github.com/1000ch/gulp-image)
+11. [browserSync](https://github.com/BrowserSync/browser-sync)
+
+## License
+[MIT](https://github.com/Logustra/sapl/blob/master/LICENSE.md) &copy; [Logustra](https://github.com/Logustra)

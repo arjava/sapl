@@ -1,22 +1,40 @@
 module.exports = function(grunt){
   grunt.loadNpmTasks("grunt-sass");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
-  grunt.loadNpmTasks("grunt-babel");
-  grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-autoprefixer");
-  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks("grunt-browserify");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-image");
+  grunt.loadNpmTasks("grunt-browser-sync");
+  grunt.loadNpmTasks("grunt-contrib-watch");
 
   grunt.initConfig ({
 
+    // automatic minifying images
+    image: {
+      dynamic: {
+        files: [{
+          expand: true,                     // Enable dynamic expansion.
+          cwd: "src/images/",               // Src matches are relative to this path.
+          src: "*.{png,jpg,jpeg,gif,svg}",  // Actual pattern(s) to match.
+          dest: "dist/images"               // Destination path prefix.
+        }]
+      }
+    },
+
     // compile sass
     sass: {
-      options: {
-        outputStyle: "compressed"
-      },
-      dev: {
-        files: {
-          "public/css/main.css": "src/sass/*.scss"
-        }
+      production: {
+        options: {
+          sourceMap: true,
+          outputStyle: "compressed"
+        },
+        files: [{
+          expand: true,       // Enable dynamic expansion.
+          cwd: "src/sass",    // Src matches are relative to this path.
+          src: "*.scss",      // Actual pattern(s) to match.
+          dest: "dist/css",   // Destination path prefix.
+          ext: ".css",        // Dest filepaths will have this extension.
+        }]
       }
     },
 
@@ -24,52 +42,77 @@ module.exports = function(grunt){
     autoprefixer: {
       dist: {
         files: {
-          "public/css/main.css" : "public/css/main.css"
+          "dist/css/main.css" : "dist/css/main.css"
         }
       },
       options: {
-        browsers: "last 20 versions"
+        browsers: "last 50 versions"
       }
     },
 
-    // babel with minify
-    babel: {
-      options: {
-        presets: ["es2015", "stage-2", "minify"],
-      },
+    // babelify
+    browserify: {
       dist: {
-        files: {
-          "public/js/main.js": "src/js/main.js"
+        files: [{
+          expand: true,       // Enable dynamic expansion.
+          cwd: "src/js/",     // Src matches are relative to this path.
+          src: "*.js",        // Actual pattern(s) to match.
+          dest: "dist/js",    // Destination path prefix.
+          ext: ".bundle.js",  // Dest filepaths will have this extension.
+        }],
+        options: {
+          browserifyOptions: {
+            debug: true
+          },
+          transform: ["babelify"]
         }
       }
-    },// babel
+    },
+    
+    // automatic minifying javascript
+    uglify: {
+      my_target: {
+        files: [{
+          expand: true,       // Enable dynamic expansion.
+          cwd: "dist/js/",    // Src matches are relative to this path.
+          src: "*.js",        // Actual pattern(s) to match.
+          dest: "dist/js",    // Destination path prefix.
+          ext: ".bundle.js",  // Dest filepaths will have this extension.
+        }],
+      }
+    },
 
     // watch
     watch: {
       html: {
         files: ["*.html"],
+        tasks: ["image"]
       },
       sass: {
         files: ["src/**/*.scss"],
         tasks: ["sass"]
       },
       autoprefixer: {
-        files: ["public/css/main.css"],
+        files: ["src/**/*.scss"],
         tasks: ["autoprefixer"]
       },
-      scripts: {
-        files: ["src/js/*.js"],
-        tasks: ["babel"]
+      browserify: {
+        files: ["src/js/**/*.js"],
+        tasks: ["browserify"]
+      },
+      uglify: {
+        files: ["src/js/**/*.js"],
+        tasks: ["uglify"]
       },
     },
 
-    // browserSync
+    // livereload
     browserSync: {
       bsFiles: {
         src: [
           "*.html", 
-          "public/css/*.css", 
-          "public/js/*.js"
+          "dist/css/*.css", 
+          "dist/js/**/*.js"
         ]
       },
       options: {

@@ -1,0 +1,99 @@
+// breakpoint
+$xxsmall_grid    :320px;
+$xsmall_grid     :480px;
+$small_grid      :768px;
+$medium_grid     :992px;
+$large_grid      :1200px;
+$xlarge_grid     :1366px;
+$huge_grid       :1400px;
+
+@media only screen and (min-width: $xxsmall_grid) {
+    @for $i from 1 through 12 {
+        .sapl-col-xxs-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $xsmall_grid) {
+    @for $i from 1 through 12 {
+        .sapl-col-xs-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $small_grid) {
+    @for $i from 1 through 12 {
+        .sapl-col-sm-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $medium_grid) {
+    @for $i from 1 through 12 {
+        .sapl-col-md-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $large_grid) {
+    @for $i from 1 through 12 {
+        .sapl-col-lg-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $xlarge_grid) {
+    @for $i from 1 through 12 {
+        .sapl-col-xl-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $huge) {
+    @for $i from 1 through 12 {
+        .sapl-col-hg-#{$i} {
+            @include clearfix;
+            float: left;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100% / 12 * $i;
+        }
+    }
+}

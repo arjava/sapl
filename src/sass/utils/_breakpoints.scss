@@ -1,17 +1,18 @@
 // breakpoints
+$xxsmall  :320px;
+$xsmall   :480px;
+$small    :768px;
+$medium   :992px;
+$large    :1200px;
+$xlarge   :1366px;
+$huge     :1400px;
 
-$xxsmall:   320px;
-$xsmall:    480px;
-$small:     768px;
-$medium:    992px;
-$large:     1200px;
-$xlarge:    1366px;
-
-$max_xxsmall:   479px;
-$max_xsmall:    767px;
-$max_small:     991px;
-$max_medium:    1199px;
-$max_large:     1365px;
+$max_xxsmall  :479px;
+$max_xsmall   :767px;
+$max_small    :991px;
+$max_medium   :1199px;
+$max_large    :1365px;
+$max_xlarge   :1399px;
 
 // media queries
 
@@ -32,6 +33,9 @@ $max_large:     1365px;
    @media only screen and (min-width: $large) and (max-width: $max_large) { @content; }
   }
   @else if $screenSize == xlarge {
-   @media only screen and (min-width: $xlarge) { @content; }
+   @media only screen and (min-width: $xlarge) and (max-width: $max_xlarge) { @content; }
+  }
+  @else if $screenSize == huge {
+   @media only screen and (min-width: $huge) { @content; }
   }
 }
