@@ -67,6 +67,7 @@ sass-boilerplate/
 1. Semantic HTML5
 2. Includes Flat Color
 3. Includes Typography
+<<<<<<< HEAD
 4. Includes Grid System
 5. Include Babel
 6. Include Browserify
@@ -76,11 +77,22 @@ sass-boilerplate/
 10. Automatic Minifying Javascript
 11. Automatic Livereload 
 12. Includes Framework
+=======
+4. Autoprefixer   
+5. Livereload
+6. Automatic Compile Javascript 
+7. Automatic Minifying Javascript
+8. Includes Framework
+>>>>>>> 120439b39f0a7be3bb65c2cf901bab0dc7736a05
     * [Jquery](https://jquery.com/)
     * [Jquery UI](http://jqueryui.com/)
     * [Bootstrap](http://getbootstrap.com/)
     * [Font Awesome](http://fontawesome.io/)
+<<<<<<< HEAD
 13. Includes Useful Mixins
+=======
+9. Includes Useful Mixins
+>>>>>>> 120439b39f0a7be3bb65c2cf901bab0dc7736a05
     * Breakpoints
     * Clearfix
     * Rem units

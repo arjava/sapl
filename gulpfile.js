@@ -38,6 +38,7 @@ gulp.task("sass", () => {
 		.pipe(browserSync.stream()); // livereload
 });
 
+<<<<<<< HEAD
 // babelify
 gulp.task("babelify", () => {
 	return gulp.src("src/js/*.js")
@@ -53,6 +54,16 @@ gulp.task("babelify", () => {
 		}))
 		.pipe(gulp.dest("dist/js"))
 		.pipe(browserSync.stream()); // livereload
+=======
+// babel
+gulp.task("babel", function () {
+	return gulp.src("src/js/*.js")
+		.pipe(babel({
+			presets: ["es2015", "stage-2", "minify"]
+		}))
+		.pipe(gulp.dest("public/js"))
+		.pipe(browserSync.stream());
+>>>>>>> 120439b39f0a7be3bb65c2cf901bab0dc7736a05
 });
 
 // watch
