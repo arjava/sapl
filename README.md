@@ -1,20 +1,21 @@
 # Sapl - The Sass Boilerplate
 Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
-* Sass with Gulp : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-gulp)
-* Sass with Grunt : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-grunt)
+* Sass with Gulp : [Here](https://github.com/Logustra/sapl/tree/sass-with-gulp)
+* Sass with Grunt : [Here](https://github.com/Logustra/sapl/tree/sass-with-grunt)
 * Sass with Webpack : Coming Soon
 
 ## Quick Start
 1. Make sure you have these installed
     * [node.js](http://nodejs.org/)
+    * [yarn](https://yarnpkg.com/en/)
     * [gulp](http://gulpjs.com/)
-    * [Sass](http://sass-lang.com/)
-    * [Browserify](http://browserify.org/)
+    * [sass](http://sass-lang.com/)
+    * [browserify](http://browserify.org/)
 
-2. Clone repository `git clone -b sass-with-gulp https://github.com/Logustra/sass-boilerplate.git`
-3. CD to the folder `cd sass-boilerplate` 
-4. Run `npm install`
+2. Clone repository `git clone -b sass-with-gulp https://github.com/Logustra/sapl.git`
+3. CD to the folder `cd sapl` 
+4. Run `yarn install`
 5. Run `gulp`  
 6. Happy to use :)   
 
@@ -38,12 +39,16 @@ Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-a
 
 ## Directory Architecture
 ```
-sass-boilerplate/
+sapl/
 ├── dist/
 │   ├── css
+│   │   └── vendors
+│   │
 │   ├── fonts
 │   ├── images
-│   ├── js
+│   ├── js/
+│   │   └── vendors
+│   │ 
 │   └── videos
 │
 └── src/
@@ -206,4 +211,4 @@ sass-boilerplate/
 11. [browserSync](https://github.com/BrowserSync/browser-sync)
 
 ## License
-[MIT](https://github.com/Logustra/sass-boilerplate/blob/master/LICENSE.md) &copy; [Logustra](https://github.com/Logustra)
+[MIT](https://github.com/Logustra/sapl/blob/master/LICENSE.md) &copy; [Logustra](https://github.com/Logustra)

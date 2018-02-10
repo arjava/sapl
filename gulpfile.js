@@ -17,7 +17,7 @@ gulp.task("html", () => {
 		.pipe(browserSync.stream()); // livereload
 });
 
-// automatic minify images
+// automatic minifying images
 gulp.task("imagemin", () => {
 	gulp.src("src/images/*")
 		.pipe(image())
@@ -34,6 +34,7 @@ gulp.task("sass", () => {
 			outputStyle: "compressed"
 		}).on("error", sass.logError))
 		.pipe(autoprefixer({browsers}))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest("dist/css"))
 		.pipe(browserSync.stream()); // livereload
 });
@@ -43,10 +44,11 @@ gulp.task("babelify", () => {
 	return gulp.src("src/js/*.js")
 		.pipe(browserify({
 			insertGlobals: true,
+			debug: true,
 			transform: ['babelify']
 		}))
 		.pipe(buffer())
-		.pipe(uglify()) // automatic minify javascript
+		.pipe(uglify()) // automatic minifying javascript
 		.pipe(rename(function (path) {
 			path.basename += ".bundle";
 			path.extname = ".js"
