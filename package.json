@@ -1,24 +1,24 @@
 {
-  "name": "sass-with-grunt",
-  "description": "Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Logustra/sass-boilerplate.git"
-  },
-  "author": "Faizal Andyka",
-  "license": "MIT",
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "babelify": "^8.0.0",
-    "grunt": "^1.0.1",
-    "grunt-autoprefixer": "^3.0.4",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-browserify": "^5.2.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-image": "^4.1.0",
-    "grunt-sass": "2.0.0"
-  }
+    "name": "sass-with-grunt",
+    "description": "Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Logustra/sass-boilerplate.git"
+    },
+    "author": "Faizal Andyka",
+    "license": "MIT",
+    "dependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babelify": "^8.0.0",
+        "grunt": "^1.0.1",
+        "grunt-autoprefixer": "^3.0.4",
+        "grunt-browser-sync": "^2.2.0",
+        "grunt-browserify": "^5.2.0",
+        "grunt-contrib-uglify": "^2.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-image": "^4.1.0",
+        "grunt-sass": "2.0.0"
+    }
 }
