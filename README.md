@@ -1,5 +1,5 @@
 # Sapl - The Sass Boilerplate
-Sapl - Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
 * Sass with Gulp : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-gulp)
 * Sass with Grunt : [Here](https://github.com/Logustra/sass-boilerplate/tree/sass-with-grunt)
