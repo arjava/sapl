@@ -197,7 +197,7 @@ sapl/
     }
     ```
 
-## Documentations
+## Dependencies Documentations
 1. [grunt-sass](https://github.com/sindresorhus/grunt-sass)
 2. [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
 3. [grunt-browserify](https://github.com/jmreidy/grunt-browserify)
