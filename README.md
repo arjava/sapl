@@ -192,7 +192,7 @@ sass-boilerplate/
     }
     ```
 
-## Dependency Documentation
+## Documentations
 1. [gulp](https://github.com/gulpjs/gulp)
 2. [gulp-sass](https://github.com/dlmanning/gulp-sass)
 3. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
