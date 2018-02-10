@@ -198,17 +198,13 @@ sapl/
     ```
 
 ## Documentations
-1. [gulp](https://github.com/gulpjs/gulp)
-2. [gulp-sass](https://github.com/dlmanning/gulp-sass)
-3. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
-4. [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
-5. [gulp-browserify](https://github.com/deepak1556/gulp-browserify)
-6. [gulp-babelify](https://github.com/babel/babelify)
-7. [vinyl-buffer](https://github.com/hughsk/vinyl-buffer)
-8. [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
-9. [gulp-rename](https://github.com/hparra/gulp-rename)
-10. [gulp-image](https://github.com/1000ch/gulp-image)
-11. [browserSync](https://github.com/BrowserSync/browser-sync)
+1. [grunt-sass](https://github.com/sindresorhus/grunt-sass)
+2. [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
+3. [grunt-browserify](https://github.com/jmreidy/grunt-browserify)
+4. [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
+5. [grunt-image](https://github.com/1000ch/grunt-image)
+6. [grunt-browser-sync](https://github.com/BrowserSync/browser-sync)
+7. [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 
 ## License
 [MIT](https://github.com/Logustra/sapl/blob/master/LICENSE.md) &copy; [Logustra](https://github.com/Logustra)
