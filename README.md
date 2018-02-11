@@ -70,9 +70,9 @@ sapl/
 
 ## Features
 1. Semantic HTML5
-2. Includes Flat Color
-3. Includes Typography
-4. Includes Grid System
+2. Included Flat Colors
+3. Included Typographys
+4. Included Grid System
 5. Include Babel
 6. Include Browserify
 7. Automatic Browser Prefixing   
@@ -80,12 +80,12 @@ sapl/
 9. Automatic Minifying Images
 10. Automatic Minifying Javascript
 11. Automatic Livereload 
-12. Includes Framework
+12. Included Frameworks
     * [Jquery](https://jquery.com/)
     * [Jquery UI](http://jqueryui.com/)
     * [Bootstrap](http://getbootstrap.com/)
     * [Font Awesome](http://fontawesome.io/)
-13. Includes Useful Mixins
+13. Included Useful Mixins
     * Breakpoints
     * Clearfix
     * Rem units
