@@ -6,8 +6,7 @@ language: node_js
 node_js:
   - "9"
 install:
-  - yarn
-  - yarn install
+  - npm install
 script:
-  - yarn start
-  - yarn build
+  - npm start
+  - npm build
