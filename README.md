@@ -6,6 +6,7 @@
 </div>
 
 # Sapl - The Sass Boilerplate
+[![Build Status](https://travis-ci.org/Logustra/sapl.svg?branch=sass-with-gulp)](https://travis-ci.org/Logustra/sapl)
 [![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Logustra/sapl.svg)](https://github.com/Logustra/sapl/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Logustra/sapl.svg)](https://github.com/Logustra/sapl/stargazers)
@@ -224,16 +225,20 @@ sapl/
 
 ## Dependencies
 1. [gulp](https://github.com/gulpjs/gulp)
-2. [gulp-sass](https://github.com/dlmanning/gulp-sass)
-3. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
-4. [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
-5. [gulp-browserify](https://github.com/deepak1556/gulp-browserify)
-6. [gulp-babelify](https://github.com/babel/babelify)
-7. [vinyl-buffer](https://github.com/hughsk/vinyl-buffer)
-8. [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
-9. [gulp-rename](https://github.com/hparra/gulp-rename)
+2. [babel](https://github.com/babel/babel)
+3. [babel-preset-es2015](https://github.com/babel/babel/tree/master/packages/babel-preset-es2015)
+4. [babel-preset-stage-2](https://github.com/babel/babel/tree/master/packages/babel-preset-stage-2)
+5. [babelify](https://github.com/babel/babelify)
+6. [browser-sync](https://github.com/BrowserSync/browser-sync)
+7. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
+8. [gulp-browserify](https://github.com/deepak1556/gulp-browserify)
+9. [gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin)
 10. [gulp-image](https://github.com/1000ch/gulp-image)
-11. [browserSync](https://github.com/BrowserSync/browser-sync)
+11. [gulp-rename](https://github.com/hparra/gulp-rename)
+12. [gulp-sass](https://github.com/dlmanning/gulp-sass)
+13. [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
+14. [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
+15. [vinyl-buffer](https://github.com/hughsk/vinyl-buffer)
 
 ## License
 [MIT](https://github.com/Logustra/sapl/blob/master/LICENSE.md) &copy; [Logustra](https://github.com/Logustra)

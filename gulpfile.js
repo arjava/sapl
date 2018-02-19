@@ -12,7 +12,7 @@ const gulp 			= require("gulp"),
 	  browserSync 	= require("browser-sync").create(),
 	  browsers		= "last 50 versions";
 
-// htmlmin
+// automatic minifying html
 gulp.task('htmlmin', function () {
 	return gulp.src("src/*.html")
 		.pipe(htmlmin({ 
