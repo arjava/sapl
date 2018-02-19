@@ -1,9 +1,21 @@
+<div align="center">
+    <a href="https://github.com/Logustra/sapl">
+      <img src="http://ultraimg.com/images/2018/02/19/nsjq.png" width="175px"
+        alt="Sapl - The Sass Boilerplate">
+    </a>
+</div>
+
 # Sapl - The Sass Boilerplate
+[![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
+[![GitHub issues](https://img.shields.io/github/issues/Logustra/sapl.svg)](https://github.com/Logustra/sapl/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Logustra/sapl.svg)](https://github.com/Logustra/sapl/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Logustra/sapl.svg)](https://github.com/Logustra/sapl/network)
+
 Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
 * Sass with Gulp : [Here](https://github.com/Logustra/sapl/tree/sass-with-gulp)
 * Sass with Grunt : [Here](https://github.com/Logustra/sapl/tree/sass-with-grunt)
-* Sass with Webpack : Coming Soon
+* Sass with Webpack : [Here](https://github.com/Logustra/sapl/tree/sass-with-webpack)
 
 ## Quick Start
 1. Make sure you have these installed
@@ -35,7 +47,7 @@ There are many project architectures that you can employ in your project, and ea
 - `vendors/` – contains 3rd-party styles, mixins, etc.
 - `main.scss` – output file that brings together all of the above parts
 
-Source : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
+Reference : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
 ## Directory Architecture
 ```
@@ -73,8 +85,8 @@ sapl/
 2. Included Flat Colors
 3. Included Typographys
 4. Included Grid System
-5. Include Babel
-6. Include Browserify
+5. Included Babel
+6. Included Browserify
 7. Automatic Browser Prefixing   
 8. Automatic Minifying CSS   
 9. Automatic Minifying Images
@@ -197,7 +209,7 @@ sapl/
     }
     ```
 
-## Dependencies Documentations
+## Dependencies
 1. [gulp](https://github.com/gulpjs/gulp)
 2. [gulp-sass](https://github.com/dlmanning/gulp-sass)
 3. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)

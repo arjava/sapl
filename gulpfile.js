@@ -1,7 +1,7 @@
 const gulp 			= require("gulp"),
 	  sass 			= require("gulp-sass"),
 	  autoprefixer 	= require("gulp-autoprefixer"),
-	  sourcemaps 	= require('gulp-sourcemaps');
+	  sourcemaps 	= require('gulp-sourcemaps'),
 	  browserify 	= require("gulp-browserify"),
 	  babelify 		= require("babelify"),
 	  buffer 		= require("vinyl-buffer"),
