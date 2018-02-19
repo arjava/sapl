@@ -1,13 +1,5 @@
-sudo: true
-os:
-  - linux
-  - osx
-  - windows
 language: node_js
 node_js:
   - "9"
 install:
-  - sudo npm install
-script:
-  - npm start
-  - npm build
+  - yarn
