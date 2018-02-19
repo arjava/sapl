@@ -9,6 +9,7 @@
 [![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Logustra/sapl.svg)](https://github.com/Logustra/sapl/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Logustra/sapl.svg)](https://github.com/Logustra/sapl/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Logustra/sapl.svg)](https://github.com/Logustra/sapl/network)
 
 Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
@@ -23,7 +24,7 @@ Sapl - The Sass Boilerplate is a professional front-end template for building fa
     * [webpack](https://webpack.js.org/)
     * [sass](http://sass-lang.com/)
 
-2. Clone repository `git clone -b sass-with-gulp https://github.com/Logustra/sapl.git`
+2. Clone repository `git clone -b sass-with-webpack https://github.com/Logustra/sapl.git`
 3. CD to the folder `cd sapl` 
 4. Run `yarn install`
 5. Run `yarn start`  
