@@ -7,6 +7,8 @@
 
 # Sapl - The Sass Boilerplate
 [![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
+[![GitHub issues](https://img.shields.io/github/issues/Logustra/sapl.svg)](https://github.com/Logustra/sapl/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Logustra/sapl.svg)](https://github.com/Logustra/sapl/stargazers)
 
 Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
