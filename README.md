@@ -54,30 +54,42 @@ Reference : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architectur
 sapl/
 ├── dist/
 │   ├── css
-│   │   └── vendors
+│   │   ├── vendors
+│   │   └──  main.css
 │   │
 │   ├── fonts
 │   ├── images
 │   ├── js/
-│   │   └── vendors
+│   │   ├── vendors
+│   │   └── main.bundle.js
 │   │ 
-│   └── videos
+│   ├── videos
+│   └── index.html
 │
-└── src/
-    ├── images
-    ├── js/
-    │   ├── base
-    │   ├── components
-    │   └── layout
-    │
-    └── sass/
-        ├── base
-        ├── components
-        ├── layout
-        ├── pages
-        ├── themes
-        ├── utils
-        └── vendors
+├── src/
+│   ├── images
+│   ├── js/
+│   │   ├── base
+│   │   ├── components
+│   │   └── layout
+│   │
+│   ├── sass/
+│   │   ├── base
+│   │   ├── components
+│   │   ├── layout
+│   │   ├── pages
+│   │   ├── themes
+│   │   ├── utils
+│   │   └── vendors
+│   │
+│   └── index.html
+│ 
+├── .babelrc
+├── .travis.yml
+├── gulpfile.js
+├── LICENSE.md
+├── package.json
+└── README.md
 ```
 
 ## Features
@@ -88,16 +100,17 @@ sapl/
 5. Included Babel
 6. Included Browserify
 7. Automatic Browser Prefixing   
-8. Automatic Minifying CSS   
-9. Automatic Minifying Images
-10. Automatic Minifying Javascript
-11. Automatic Livereload 
-12. Included Frameworks
+8. Automatic Minifying HTML 
+9. Automatic Minifying CSS   
+10. Automatic Minifying Images
+11. Automatic Minifying Javascript
+12. Automatic Livereload 
+13. Included Frameworks
     * [Jquery](https://jquery.com/)
     * [Jquery UI](http://jqueryui.com/)
     * [Bootstrap](http://getbootstrap.com/)
     * [Font Awesome](http://fontawesome.io/)
-13. Included Useful Mixins
+14. Included Useful Mixins
     * Breakpoints
     * Clearfix
     * Rem units

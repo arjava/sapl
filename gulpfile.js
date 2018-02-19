@@ -1,4 +1,5 @@
 const gulp 			= require("gulp"),
+	  htmlmin 		= require("gulp-htmlmin"),
 	  sass 			= require("gulp-sass"),
 	  autoprefixer 	= require("gulp-autoprefixer"),
 	  sourcemaps 	= require('gulp-sourcemaps'),
@@ -11,10 +12,14 @@ const gulp 			= require("gulp"),
 	  browserSync 	= require("browser-sync").create(),
 	  browsers		= "last 50 versions";
 
-// html
-gulp.task("html", () => {
-	return gulp.src("*.html")
-		.pipe(browserSync.stream()); // livereload
+// htmlmin
+gulp.task('htmlmin', function () {
+	return gulp.src("src/*.html")
+		.pipe(htmlmin({ 
+			removeComments: true, 
+			collapseWhitespace: true
+		}))
+		.pipe(gulp.dest("dist"));
 });
 
 // automatic minifying images
@@ -22,7 +27,6 @@ gulp.task("imagemin", () => {
 	gulp.src("src/images/*")
 		.pipe(image())
 		.pipe(gulp.dest("dist/images"))
-		.pipe(browserSync.stream()); // livereload
 });
 
 // compile sass
@@ -36,7 +40,6 @@ gulp.task("sass", () => {
 		.pipe(autoprefixer({browsers}))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest("dist/css"))
-		.pipe(browserSync.stream()); // livereload
 });
 
 // babelify
@@ -54,19 +57,18 @@ gulp.task("babelify", () => {
 			path.extname = ".js"
 		}))
 		.pipe(gulp.dest("dist/js"))
-		.pipe(browserSync.stream()); // livereload
 });
 
 // watch
 gulp.task("watch", () => {
 	browserSync.init({
 		server: {
-			baseDir: "./"
+			baseDir: "./dist"
 		}
 	});
-	gulp.watch("*.html", ["html", "imagemin"]);
-	gulp.watch("src/sass/**/*.scss", ["sass"]);
-	gulp.watch("src/js/**/*.js", ["babelify"]);
+	gulp.watch("src/*.html", ["htmlmin", "imagemin"]).on('change', browserSync.reload);
+	gulp.watch("src/sass/**/*.scss", ["sass"]).on('change', browserSync.reload);
+	gulp.watch("src/js/**/*.js", ["babelify"]).on('change', browserSync.reload);
 });
 
 gulp.task("default", ["watch"]);
