@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-autoprefixer");
     grunt.loadNpmTasks("grunt-browserify");
@@ -8,6 +9,23 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
 
     grunt.initConfig({
+
+        // automatic minifying html
+        htmlmin: {                                     
+            dist: {                                      
+                options: {                                 
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: [{
+                    expand: true,       // Enable dynamic expansion.
+                    cwd: "src",    // Src matches are relative to this path.
+                    src: "*.html",      // Actual pattern(s) to match.
+                    dest: "dist",   // Destination path prefix.
+                    ext: ".html",        // Dest filepaths will have this extension.
+                }]
+            }
+        },
 
         // automatic minifying images
         image: {
@@ -85,8 +103,8 @@ module.exports = function (grunt) {
         // watch
         watch: {
             html: {
-                files: ["*.html"],
-                tasks: ["image"]
+                files: ["src/*.html"],
+                tasks: ["htmlmin","image"]
             },
             sass: {
                 files: ["src/**/*.scss"],
@@ -110,7 +128,7 @@ module.exports = function (grunt) {
         browserSync: {
             bsFiles: {
                 src: [
-                    "*.html",
+                    "dist/*.html",
                     "dist/css/*.css",
                     "dist/js/**/*.js"
                 ]
@@ -118,7 +136,7 @@ module.exports = function (grunt) {
             options: {
                 watchTask: true,
                 server: {
-                    baseDir: "./"
+                    baseDir: "./dist"
                 }
             }
         }
