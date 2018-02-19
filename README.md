@@ -1,12 +1,12 @@
 <div align="center">
     <a href="https://github.com/Logustra/sapl">
-      <img src="http://ultraimg.com/images/2018/02/19/nsjq.png"
+      <img src="http://ultraimg.com/images/2018/02/19/nsjq.png" width="175px"
         alt="Sapl - The Sass Boilerplate">
     </a>
 </div>
 
 # Sapl - The Sass Boilerplate
-![Dependency Status](http://ultraimg.com/images/2018/02/19/nsjK.png)
+[![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
 
 Sapl - The Sass Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
 
@@ -50,12 +50,14 @@ Reference : [scotch.io](https://scotch.io/tutorials/aesthetic-sass-1-architectur
 sapl/
 ├── dist/
 │   ├── css
-│   │   └── vendors
+│   │   ├── vendors
+│   │   └──  main.css
 │   │
 │   ├── fonts
 │   ├── images
 │   ├── js/
-│   │   └── vendors
+│   │   ├── vendors
+│   │   └── main.bundle.js
 │   │ 
 │   ├── videos
 │   └── index.html
@@ -87,10 +89,10 @@ sapl/
 
 ## Features
 1. Semantic HTML5
-2. Includes Flat Color
-3. Includes Typography
-4. Includes Grid System
-5. Include Babel
+2. Included Flat Colors
+3. Included Typographys
+4. Included Grid System
+5. Included Babel
 6. Automatic Browser Prefixing
 7. Automatic Minifying HTML    
 8. Automatic Minifying CSS   
