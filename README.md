@@ -6,6 +6,7 @@
 </div>
 
 # Sapl - The Sass Boilerplate
+[![Build Status](https://travis-ci.org/Logustra/sapl.svg?branch=sass-with-webpack)](https://travis-ci.org/Logustra/sapl)
 [![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Logustra/sapl.svg)](https://github.com/Logustra/sapl/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Logustra/sapl.svg)](https://github.com/Logustra/sapl/stargazers)
@@ -84,6 +85,7 @@ sapl/
 │   └── index.html
 │ 
 ├── .babelrc
+├── .travis.yml
 ├── LICENSE.md
 ├── package.json
 ├── README.md

@@ -59,53 +59,11 @@ module.exports = {
                     {
                         loader: 'html-loader',
                         options: {
-                            minimize: true,
                             removeComments: true,
                             collapseWhitespace: true
                         }
                     }
                 ],
-            },
-
-            //babel
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "babel-loader"
-            },
-
-            // compile sass
-            // automatic browser prefixing
-            {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: [
-                        {
-                            loader: "css-loader",
-                            options: {
-                                url: false,
-                                sourceMap: true
-                            }
-                        }, 
-                        {
-                            loader: "postcss-loader",
-                            options: {
-                                sourceMap: true,
-                                plugins: () => {
-                                    return autoprefixerConfig;
-                                }
-                            }
-                        },
-                        {
-                            loader: "sass-loader",
-                            options: {
-                                outputStyle: "compressed",
-                                sourceMap: true
-                            }
-                        }
-                    ]
-                })
             },
 
             // automatic minifying images
@@ -146,6 +104,47 @@ module.exports = {
                         }
                     }
                 ]
+            },
+
+            // compile sass
+            // automatic browser prefixing
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: [
+                        {
+                            loader: "css-loader",
+                            options: {
+                                url: false,
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: "postcss-loader",
+                            options: {
+                                sourceMap: true,
+                                plugins: () => {
+                                    return autoprefixerConfig;
+                                }
+                            }
+                        },
+                        {
+                            loader: "sass-loader",
+                            options: {
+                                outputStyle: "compressed",
+                                sourceMap: true
+                            }
+                        }
+                    ]
+                })
+            },
+
+            //babel
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
             }
         ]
     },
