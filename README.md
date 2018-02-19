@@ -6,6 +6,7 @@
 </div>
 
 # Sapl - The Sass Boilerplate
+[![Build Status](https://travis-ci.org/Logustra/sapl.svg?branch=sass-with-grunt)](https://travis-ci.org/Logustra/sapl)
 [![License](https://img.shields.io/github/license/Logustra/sapl.svg)](https://raw.githubusercontent.com/Logustra/sapl/master/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Logustra/sapl.svg)](https://github.com/Logustra/sapl/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Logustra/sapl.svg)](https://github.com/Logustra/sapl/stargazers)
@@ -223,13 +224,19 @@ sapl/
     ```
 
 ## Dependencies
-1. [grunt-sass](https://github.com/sindresorhus/grunt-sass)
-2. [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
-3. [grunt-browserify](https://github.com/jmreidy/grunt-browserify)
-4. [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
-5. [grunt-image](https://github.com/1000ch/grunt-image)
-6. [grunt-browser-sync](https://github.com/BrowserSync/browser-sync)
-7. [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+1. [grunt](https://github.com/gruntjs/grunt)
+2. [babel](https://github.com/babel/babel)
+3. [babel-preset-es2015](https://github.com/babel/babel/tree/master/packages/babel-preset-es2015)
+4. [babel-preset-stage-2](https://github.com/babel/babel/tree/master/packages/babel-preset-stage-2)
+5. [babelify](https://github.com/babel/babelify)
+6. [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
+7. [grunt-browser-sync](https://github.com/BrowserSync/browser-sync)
+8. [grunt-browserify](https://github.com/jmreidy/grunt-browserify)
+9. [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin)
+10. [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
+11. [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+12. [grunt-image](https://github.com/1000ch/grunt-image)
+13. [grunt-sass](https://github.com/sindresorhus/grunt-sass)
 
 ## License
 [MIT](https://github.com/Logustra/sapl/blob/master/LICENSE.md) &copy; [Logustra](https://github.com/Logustra)

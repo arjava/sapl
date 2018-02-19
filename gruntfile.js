@@ -64,6 +64,7 @@ module.exports = function (grunt) {
                 }
             },
             options: {
+                map: true,
                 browsers: "last 50 versions"
             }
         },
