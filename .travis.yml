@@ -1,3 +1,4 @@
+sudo: true
 os:
   - linux
   - osx
@@ -6,7 +7,7 @@ language: node_js
 node_js:
   - "9"
 install:
-  - npm install
+  - sudo npm install
 script:
   - npm start
   - npm build

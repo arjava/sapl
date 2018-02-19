@@ -20,14 +20,13 @@ Sapl - The Sass Boilerplate is a professional front-end template for building fa
 ## Quick Start
 1. Make sure you have these installed
     * [node.js](http://nodejs.org/)
-    * [yarn](https://yarnpkg.com/en/)
     * [webpack](https://webpack.js.org/)
     * [sass](http://sass-lang.com/)
 
 2. Clone repository `git clone -b sass-with-webpack https://github.com/Logustra/sapl.git`
 3. CD to the folder `cd sapl` 
-4. Run `yarn install`
-5. Run `yarn start`  
+4. Run `npm install`
+5. Run `npm start`  
 6. Happy to use :)   
 
 ## Architecture Sass
