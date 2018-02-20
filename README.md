@@ -71,7 +71,8 @@ sapl/
 │   ├── js/
 │   │   ├── base
 │   │   ├── components
-│   │   └── layout
+│   │   ├── layout
+│   │   └── main.js
 │   │
 │   ├── sass/
 │   │   ├── base
@@ -80,7 +81,8 @@ sapl/
 │   │   ├── pages
 │   │   ├── themes
 │   │   ├── utils
-│   │   └── vendors
+│   │   ├── vendors
+│   │   └── main.scss
 │   │
 │   └── index.html
 │ 
